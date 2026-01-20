@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Gallery | CCTV, Biometrics & Bell Systems | Vijay Electronics</title>
+    <meta name="description"
+        content="View our portfolio of installed security systems in Unnao. CCTV cameras, biometric scanners, and automatic school bells. Quality you can see.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Vijay Electronics</div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html" class="nav-active">Gallery</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="admin.html"><i class="fas fa-user-shield"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="padding-top: 100px;">
+        <section>
+            <div class="section-title">
+                <h1>Visual Portfolio</h1>
+                <p>Explore our high-end installations across Unnao. All images features our keyword-optimized
+                    technology.</p>
+            </div>
+
+            <div class="gallery" id="galleryGrid">
+                <!-- Data from images/ will be populated here if dynamic, otherwise manual -->
+                <!-- For now, we use the script to load 30 images as before -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="bottom-footer">
+            <p>&copy; 2026 Vijay Electronics. Serving Unnao's security needs.</p>
+        </div>
+    </footer>
+
+    <script>
+        const gallery = document.getElementById('galleryGrid');
+        for (let i = 1; i <= 30; i++) {
+            const ext = (i >= 26 && i <= 29) ? 'png' : (i === 4 || i === 21) ? 'png' : 'jpeg';
+            gallery.innerHTML += `
+                <div class="gallery-item" style="display: flex; flex-direction: column; height: auto;">
+                    <img src="image/${i}.${ext}" alt="Security Installation ${i} Unnao" loading="lazy">
+                    <div style="padding: 10px; background: var(--bg-card); color: var(--text-dim); font-size: 0.8rem; text-align: center; border-top: 1px solid var(--border-color);">
+                        <strong>Security Installation ${i} Unnao</strong><br>
+                        High Quality CCTV Service in Unnao District.
+                    </div>
+                </div>
+            `;
+        }
+
+        // Mobile Menu Toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+            document.querySelector('nav').classList.toggle('nav-active');
+        });
+    </script>
+</body>
+
+</html>

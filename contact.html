@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | CCTV Shop in Unnao | Vijay Electronics</title>
+    <meta name="description"
+        content="Contact Vijay Electronics for the best CCTV installation and security services in Unnao. Visit our store or call for a free site survey.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Vijay Electronics</div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html" class="nav-active">Contact</a></li>
+                <li><a href="admin.html"><i class="fas fa-user-shield"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="padding-top: 100px;">
+        <section>
+            <div class="section-title">
+                <h1>Contact Our Experts</h1>
+                <p>We are ready to secure your property in Unnao district.</p>
+            </div>
+            <div class="grid">
+                <div>
+                    <h2 style="color: var(--primary-color); margin-bottom: 2rem;">Get In Touch</h2>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 1.5rem;">
+                        <li style="display: flex; gap: 1rem; align-items: center;">
+                            <i class="fas fa-map-marker-alt"
+                                style="color: var(--primary-color); font-size: 1.5rem;"></i>
+                            <div>
+                                <h4 style="color: #fff;">Our Location</h4>
+                                <p style="color: var(--text-dim);">Unnao Market, Uttar Pradesh - 209801</p>
+                            </div>
+                        </li>
+                        <li style="display: flex; gap: 1rem; align-items: center;">
+                            <i class="fas fa-phone-alt" style="color: var(--primary-color); font-size: 1.5rem;"></i>
+                            <div>
+                                <h4 style="color: #fff;">Call/WhatsApp</h4>
+                                <p style="color: var(--text-dim);">+91 8090090051</p>
+                            </div>
+                        </li>
+                        <li style="display: flex; gap: 1rem; align-items: center;">
+                            <i class="fas fa-envelope" style="color: var(--primary-color); font-size: 1.5rem;"></i>
+                            <div>
+                                <h4 style="color: #fff;">Email Us</h4>
+                                <p style="color: var(--text-dim);">vijay.electronix@gmail.com</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div
+                        style="margin-top: 2rem; background: var(--bg-card); padding: 1.5rem; border-radius: 12px; border-left: 5px solid var(--primary-color);">
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">WhatsApp Quote</h4>
+                        <p style="color: var(--text-dim); font-size: 0.9rem;">Chat with us for an instant price
+                            estimate!</p>
+                        <a href="https://wa.me/918090090051" class="btn btn-secondary"
+                            style="margin-top: 1rem; border-color: #25D366; color: #25D366; display: inline-block;"><i
+                                class="fab fa-whatsapp"></i> Chat Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lead-section" style="margin: 0;">
+                <form class="lead-form" id="leadForm">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" id="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Mobile Number</label>
+                        <input type="tel" id="mobile" placeholder="9876543210" required pattern="[0-9]{10}">
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea id="query" rows="4" placeholder="Your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <div id="formMessage" style="text-align: center; margin-top: 1rem; display: none;"></div>
+                </form>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="bottom-footer">
+            <p>&copy; 2026 Vijay Electronics.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
